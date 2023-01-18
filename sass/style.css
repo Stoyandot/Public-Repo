@@ -226,7 +226,7 @@ body {
   font-size: 18px;
   font-weight: 100;
   line-height: 1.55;
-  color: #344054;
+  color: rgb(34, 34, 34);
   background-color: #FCFCFD;
   font-stretch: 80%;
 }
@@ -399,7 +399,6 @@ h3 {
 }
 .feature header .feature-icon {
   margin-right: 20px;
-  width: 50px;
 }
 .feature header .feature-title {
   font-weight: 320;
@@ -509,19 +508,16 @@ h3 {
 .quote-slider .slides cite, .quote-slider .slides span {
   font-size: 12px;
   font-size: 0.75em;
-  font-weight: 200;
-  letter-spacing: 1px;
+  font-weight: 500;
 }
 .quote-slider .slides cite {
   font-style: normal;
   text-transform: uppercase;
-  font-family: #194184;
-  font-weight: 300;
+  font-family: "Nunito", sans-serif;
 }
 .quote-slider .slides span {
-  color: "Nunito", sans-serif;
+  color: #4c4c4c;
   text-transform: uppercase;
-  font-weight: 300;
 }
 .quote-slider .flex-control-paging {
   margin-left: 200px;
@@ -1839,7 +1835,7 @@ td.visible-print {
 #branding .site-description {
   font-size: 12px;
   font-size: 0.75em;
-  color: #344054;
+  color: rgb(34, 34, 34);
   font-family: "Roboto Flex", serif;
 }
 
@@ -2135,10 +2131,6 @@ p {
   font-weight: 300;
 }
 
-.is-weight150 {
-  font-weight: 150;
-}
-
 .is-italic {
   font-style: italic;
 }
@@ -2234,7 +2226,7 @@ p {
   padding: 10px 100px 10px 20px;
   width: 100%;
   height: 70px;
-  color: #344054;
+  color: rgb(34, 34, 34);
 }
 .subscribe-form form input:hover, .subscribe-form form input:hover + button, .subscribe-form form input:focus, .subscribe-form form input:focus + button {
   border-color: #88FF96;
@@ -2243,7 +2235,7 @@ p {
   height: 70px;
   padding: 15px 20px 10px;
   background-color: transparent;
-  border: 2px solid #194184;
+  border: 4px solid #194184;
   margin-left: -10px;
   position: absolute;
   right: 0;

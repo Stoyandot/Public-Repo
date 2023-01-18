@@ -85,10 +85,7 @@
 			display: inline-block;
 			vertical-align: top;
 		}
-		.feature-icon{ margin-right: 20px;
-			width: 50px;
-		
-		}
+		.feature-icon{ margin-right: 20px}
 		
 		.feature-title{
 			font-weight: 320;
@@ -189,19 +186,16 @@
 		}
 		cite,span{
 			@include em(12);
-			font-weight: 200;
-			letter-spacing: 1px;
+			font-weight: 500;
 		}
 		cite{
 			font-style: normal;
 			text-transform: uppercase;
-			font-family: $secondary-color;
-			font-weight: 300;
+			font-family: $primary-font;
 		}
 		span{
-			color: $primary-font;
+			color: #4c4c4c;
 			text-transform: uppercase;
-			font-weight: 300;
 		}
 
 	}
