@@ -1,0 +1,121 @@
+/*
+ * Header Styles
+ */
+
+
+ 
+.site-header{
+	background-color: none;
+	color: rgb(255, 255, 255);
+	padding-top: 20px;
+	
+	
+
+}
+
+
+#branding{
+	float: left;
+
+	.branding-copy,.logo{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.logo{
+		margin-right: 10px;
+		max-width: 80px;
+	}
+	.site-title{
+		margin: 0;
+		@include em(14);
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 1;
+		display: none!important; 
+		a{color: inherit}
+	}
+	.site-description{
+		@include em(12);
+		color: $body-color;
+		font-family: $secondary-font;
+	}
+}
+
+.menu-toggle{
+	background-color: transparent;
+	color: rgb(84, 84, 84);
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	@include em(20);
+	display: none;
+
+	@media screen and (max-width: 990px){ display: block; }
+	@media screen and (min-width: 991px){ display: none!important; }
+}
+.mobile-navigation{
+	clear: both;
+	padding: 50px 20px 0;
+	display: none;
+	
+	@media screen and (min-width: 991px){ display: none!important; }
+
+	.menu{
+		list-style: none;
+		padding-left:0;
+		margin: 0;
+
+
+		a{
+			color: rgb(0, 0, 0);
+			padding: 10px 20px;
+			display: block;
+			font-family: $primary-font;
+			border-left: 4px solid transparent;
+			transition: .3s ease;
+			text-transform: uppercase;
+			font-weight: 600;
+			@include em(12);
+		}
+		.current-menu-item a,.menu-item:hover a{
+			color: $accent-color;
+			border-left: 4px solid $accent-color;
+		}
+	}
+}
+.main-navigation{
+	float: right;
+
+	.menu{
+		list-style: none;
+		margin-top: 1em;
+		padding: 0;
+
+		@media screen and (min-width: 991px){ display: block!important; }
+		@media screen and (max-width: 990px){ display: none; }
+	}
+
+	.menu-item{
+		display: inline-block;
+		padding: 0 10px;
+
+		a{
+			padding: 10px 0;
+			border-bottom: 3px solid transparent;
+			color: rgb(77, 77, 77);
+			font-family: $secondary-font;
+			@include em(14);
+			text-transform: uppercase;
+			font-weight: 150;
+			transition: .3s ease;
+			letter-spacing: 2px;
+			font-stretch:150%;
+		}
+
+		&.current-menu-item,&:hover{
+			a{
+				border-bottom: 3px solid $accent-color;
+			}
+		}
+	}
+}
